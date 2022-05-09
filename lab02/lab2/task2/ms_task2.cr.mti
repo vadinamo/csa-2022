@@ -1,0 +1,40 @@
+D:/avl/lab2/task2/treasure_state_machine.sv {1 {vlog -work work -sv -stats=none D:/avl/lab2/task2/treasure_state_machine.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling package rooms
+-- Compiling package treasure
+-- Compiling package treasure_state_machine_sv_unit
+-- Importing package rooms
+-- Importing package treasure
+-- Compiling module treasure_state_machine
+
+Top level modules:
+	treasure_state_machine
+
+} {} {}} D:/avl/lab2/task2/testbench.sv {1 {vlog -work work -sv -stats=none D:/avl/lab2/task2/testbench.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testbench
+
+Top level modules:
+	testbench
+
+} {} {}} D:/avl/lab2/task2/task2.sv {1 {vlog -work work -sv -stats=none D:/avl/lab2/task2/task2.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling package rooms
+-- Compiling package task2_sv_unit
+-- Importing package rooms
+-- Compiling module task2
+
+Top level modules:
+	task2
+
+} {} {}} D:/avl/lab2/task2/room_state_machine.sv {1 {vlog -work work -sv -stats=none D:/avl/lab2/task2/room_state_machine.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling package rooms
+-- Compiling package room_state_machine_sv_unit
+-- Importing package rooms
+-- Compiling module room_state_machine
+
+Top level modules:
+	room_state_machine
+
+} {} {}}

@@ -1,0 +1,61 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/avl/lab2_ap
+vtask1
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1651916317
+!i10b 1
+!s100 ?O5WiUhX]^WaT[[:N7eH23
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I8j4JRzkee63ZC:^kR?1E;1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dD:/avl/lab2/task1
+w1651915753
+8D:/avl/lab2/task1/task1.sv
+FD:/avl/lab2/task1/task1.sv
+!i122 20
+L0 1 36
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1651916317.000000
+!s107 D:/avl/lab2/task1/task1.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/avl/lab2/task1/task1.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+vtestbench
+R0
+R1
+!i10b 1
+!s100 ;79ZCN`SgEA[@B`Sk>gI^0
+R2
+Ii?c``2c;Y7o<W9H9X[V`T3
+R3
+S1
+R4
+w1651863448
+8D:/avl/lab2/task1/testbench.sv
+FD:/avl/lab2/task1/testbench.sv
+!i122 21
+L0 1 45
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/avl/lab2/task1/testbench.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/avl/lab2/task1/testbench.sv|
+!i113 1
+R7
+R8

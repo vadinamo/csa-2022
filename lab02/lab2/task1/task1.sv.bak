@@ -1,0 +1,24 @@
+module lab2_xx(input logic clk,
+               input logic reset,
+               input logic left, right,
+               output logic la, lb, lc, ra, rb, rc);
+					logic [2:0] q;
+					logic [2:0] q_next;
+					
+					assign q_next[2] = (right && !left && !q[2] && !q[1] && !q[0]) || (q[2] && !q[1] && !q[0]) || (q[2] && !q[1] && q[0])
+					assign q_next[1] = (!q[2] && !q[1] && q[0]) || (!q[2] && q[1] && !q[0]) || (q[2] && !q[1] && q[0])
+					assign q_next[0] = (left && !right && !q[2] && !q[1] && !q[0]) || (!q[2] && q[1] && !q[0]) || (q[2] && !q[1] && !q[0])
+					
+					
+					always_ff @(posedge clk, posedge reset)
+						if (reset) q <= 3'b0;
+						else q <= q_next;
+						
+					la = !q_next[2] && q_next[1] && q_next[0]
+					lb = !q_next[2] && q_next[1] && !q_next[0]
+					lc = !q_next[2] && !q_next[1] && q_next[0]
+					ra = q_next[2] && q_next[1] && !q_next[0]
+					rb = q_next[2] && !q_next[1] && q_next[0]
+					rc = q_next[2] && !q_next[1] && !q_next[0]
+endmodule
+						

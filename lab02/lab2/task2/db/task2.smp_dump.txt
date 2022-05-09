@@ -1,0 +1,22 @@
+
+State Machine - |task2|treasure_state_machine:tr|current
+Name current.T1 
+current.T0 0 
+current.T1 1 
+
+State Machine - |task2|sword_state_machine:sw|current
+Name current.S1 
+current.S0 0 
+current.S1 1 
+
+State Machine - |task2|room_state_machine:r|current
+Name current.R8 current.R7 current.R6 current.R5 current.R4 current.R3 current.R2 current.R1 current.R9 
+current.R1 0 0 0 0 0 0 0 0 0 
+current.R2 0 0 0 0 0 0 1 1 0 
+current.R3 0 0 0 0 0 1 0 1 0 
+current.R4 0 0 0 0 1 0 0 1 0 
+current.R5 0 0 0 1 0 0 0 1 0 
+current.R6 0 0 1 0 0 0 0 1 0 
+current.R7 0 1 0 0 0 0 0 1 0 
+current.R8 1 0 0 0 0 0 0 1 0 
+current.R9 0 0 0 0 0 0 0 1 1 

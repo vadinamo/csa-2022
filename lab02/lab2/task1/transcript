@@ -1,0 +1,16 @@
+# Reading pref.tcl
+# OpenFile D:/avl/lab2/task1/ms_task1.mpf
+# Loading project ms_task1
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 23:51:09 on May 09,2022
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.task1
+run 200
+#         16 tests completed with          0 errors
+# ** Note: $stop    : D:/avl/lab2/task1/testbench.sv(42)
+#    Time: 175 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at D:/avl/lab2/task1/testbench.sv line 42
+# End time: 23:51:26 on May 09,2022, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 1

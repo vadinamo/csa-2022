@@ -1,0 +1,85 @@
+|task2
+clk => room_state_machine:r.clk
+clk => sword_state_machine:sw.clk
+clk => treasure_state_machine:tr.clk
+reset => room_state_machine:r.reset
+reset => sword_state_machine:sw.reset
+reset => treasure_state_machine:tr.reset
+n => room_state_machine:r.n
+s => room_state_machine:r.s
+w => room_state_machine:r.w
+e => room_state_machine:r.e
+win << Equal0.DB_MAX_OUTPUT_PORT_TYPE
+lose << Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|task2|room_state_machine:r
+clk => current~1.DATAIN
+reset => current~3.DATAIN
+n => next.OUTPUTSELECT
+n => next.OUTPUTSELECT
+n => next.OUTPUTSELECT
+n => next.OUTPUTSELECT
+n => next.OUTPUTSELECT
+n => next.OUTPUTSELECT
+n => Selector1.IN3
+n => Selector2.IN4
+s => next.DATAA
+s => next.DATAA
+s => next.DATAA
+s => next.DATAA
+w => next.OUTPUTSELECT
+w => next.OUTPUTSELECT
+w => next.OUTPUTSELECT
+w => next.OUTPUTSELECT
+w => next.OUTPUTSELECT
+w => next.OUTPUTSELECT
+w => next.OUTPUTSELECT
+w => next.OUTPUTSELECT
+w => next.DATAA
+w => Selector0.IN3
+w => next.DATAA
+w => Selector2.IN5
+w => next.DATAA
+e => next.OUTPUTSELECT
+e => next.OUTPUTSELECT
+e => next.OUTPUTSELECT
+e => next.OUTPUTSELECT
+e => always1.IN0
+e => always1.IN0
+e => always1.IN0
+e => Selector1.IN4
+e => next.DATAA
+e => Selector2.IN6
+e => Selector0.IN4
+e => Selector7.IN2
+e => Selector3.IN2
+sword => always1.IN1
+sword => always1.IN1
+treasure => always1.IN1
+room[0] <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+room[1] <= WideOr10.DB_MAX_OUTPUT_PORT_TYPE
+room[2] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+room[3] <= Selector8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|task2|sword_state_machine:sw
+clk => current~1.DATAIN
+reset => current~3.DATAIN
+room[0] => Equal0.IN1
+room[1] => Equal0.IN0
+room[2] => Equal0.IN3
+room[3] => Equal0.IN2
+sword <= sword.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|task2|treasure_state_machine:tr
+clk => current~1.DATAIN
+reset => current~3.DATAIN
+room[0] => Equal0.IN2
+room[1] => Equal0.IN1
+room[2] => Equal0.IN0
+room[3] => Equal0.IN3
+treasure <= treasure.DB_MAX_OUTPUT_PORT_TYPE
+
+
