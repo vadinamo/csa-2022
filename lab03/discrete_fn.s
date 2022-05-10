@@ -144,3 +144,4 @@ print_newline:
     li a0, 11 # tells ecall to print the character in a1
     ecall
     jr    ra
+    
