@@ -33,8 +33,8 @@ main:
     mv a1, s2
     jal tester
     
-    addi a1, a1, 1
-    beqz a1, not_equal
+    li a2, -1
+    beq a1, a2, not_equal
     
 equal:
 	la a0, answers_equals
